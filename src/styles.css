@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-size: 100%;
+  }
+  
+  .dashboard {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .stats-card {
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Map Styling */
+  .map-container {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333333;
+  }
+  
+  .info-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #d6d6d6;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-box p {
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .flag-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .jvectormap-container {
+    border-radius: 12px;
+    height: 100vh;
+    /* margin-bottom: auto; */
+     display: flex;
+     flex-direction: column;
+    /* width: 100vw; */
+
+  }
+  
+  /* .jvectormap-region {
+    fill: #e4e4e4; 
+  } */
+  
+  .jvectormap-region:hover {
+    fill: #4fb0e4; /* Hover color */
+    cursor: pointer;
+  }
+  
+  .jvectormap-zoom-btn {
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .jvectormap-zoom-btn:hover {
+    background-color: #4fb0e4;
+    color: #ffffff;
+  }
+  
+  
+  
