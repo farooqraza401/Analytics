@@ -2,22 +2,14 @@ import React from "react";
 
 const StatsCard = ({ title, value, maxValue, color }) => {
   return (
-    <div className="stats-card" style={{ marginBottom: "15px" }}>
-     <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-     <p>{title}</p>
-      <p style={{ fontSize: "12px", marginTop: "5px"  }}>
-        {value} / {maxValue}
-      </p>
-     </div>
-      <div
-        style={{
-          height: "8px",
-          width: "100%",
-          background: "#f4f4f4",
-          borderRadius: "5px",
-          position: "relative",
-        }}
-      >
+    <div className="stats-card">
+      <div className="stats-card-value">
+        <span>{title}</span>
+        <p>
+          {value} / {maxValue}
+        </p>
+      </div>
+      <div className="stats-card-innerline">
         <div
           style={{
             height: "8px",
@@ -27,7 +19,6 @@ const StatsCard = ({ title, value, maxValue, color }) => {
           }}
         />
       </div>
-     
     </div>
   );
 };

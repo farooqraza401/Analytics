@@ -3,8 +3,8 @@ import { VectorMap } from "@react-jvectormap/core";
 import { worldMill } from "@react-jvectormap/world";
 
 const MapComponent = () => {
-  const [hoveredCountry, setHoveredCountry] = useState("");
-  const [countryData, setCountryData] = useState("");
+  // const [hoveredCountry, setHoveredCountry] = useState("");
+  // const [countryData, setCountryData] = useState("");
 
   // Sample country data
   const countryValues = {
@@ -50,15 +50,19 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="jvectormap-container">
-      <h2 className="map-title">Bird's Eyes</h2>
+    <div className="jvectormap-container chart-container-section">
+      <div className="jvectormap">
+        <h2 className="map-title">Bird's Eyes</h2>
+        <div className="map-fix">
+          <div className="map-boredr-btn1" />
+          <div className="map-boredr-btn2" />
+          <div className="map-boredr-btn3" />
+        </div>
+      </div>
       <VectorMap
         map={worldMill}
         backgroundColor="#d4f1f4"
-        containerStyle={{
-          width: "100%",
-          height: "500px",
-        }}
+        containerStyle={{}}
         regionStyle={{
           initial: {
             fill: "#a7c5eb",
@@ -72,16 +76,16 @@ const MapComponent = () => {
         zoomOnScroll={false}
       />
       {/* <div className="info-box">
-        <p>
-          {hoveredCountry ? (
-            <>
-              <strong>{hoveredCountry}</strong>: {countryData}
-            </>
-          ) : (
-            "Hover over a country to view details."
-          )}
-        </p>
-      </div> */}
+      <p>
+        {hoveredCountry ? (
+          <>
+            <strong>{hoveredCountry}</strong>: {countryData}
+          </>
+        ) : (
+          "Hover over a country to view details."
+        )}
+      </p>
+    </div> */}
     </div>
   );
 };

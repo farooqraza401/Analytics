@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 
 const ProgressBar = ({ value, title, color }) => {
@@ -11,13 +8,9 @@ const ProgressBar = ({ value, title, color }) => {
   const progress = (value / 100) * circumference; // Progress stroke length
 
   return (
-    <div style={{ display: "flex", alignItems: "center", gap: "130px" }}>
+    <div className="progress-bar">
       {/* Circular progress bar */}
-      <svg
-        width={size}
-        height={size}
-        
-      >
+      <svg width={size} height={size}>
         <circle
           cx={size / 2}
           cy={size / 2}
@@ -35,9 +28,9 @@ const ProgressBar = ({ value, title, color }) => {
           strokeWidth={strokeWidth}
           strokeDasharray={circumference}
           strokeDashoffset={circumference - progress}
-          style={{
-            transition: "stroke-dashoffset 0.5s ease",
-          }}
+          // style={{
+          //   transition: "stroke-dashoffset 0.5s ease",
+          // }}
         />
         <text
           x="50%"
@@ -53,20 +46,17 @@ const ProgressBar = ({ value, title, color }) => {
 
       {/* Title and details */}
       <div>
-        <p style={{ margin: 0, fontSize: "14px", color: "#555" }}>{title}</p>
-        <div style={{ display: "flex", gap: "5px", alignItems: "center" }}>
+        <p className="progress-bar-title">{title}</p>
+        <div className="progrs">
           <span
+            className="progress-bar-color"
             style={{
               backgroundColor: color,
-              color: "#fff",
-              padding: "2px 6px",
-              borderRadius: "4px",
-              fontSize: "12px",
             }}
           >
             {value}%
           </span>
-          <span style={{ fontSize: "12px", color: "#888" }}>44%</span>
+          <span className="progrs44">44%</span>
         </div>
       </div>
     </div>
@@ -74,4 +64,3 @@ const ProgressBar = ({ value, title, color }) => {
 };
 
 export default ProgressBar;
-
