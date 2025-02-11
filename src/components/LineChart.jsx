@@ -20,9 +20,9 @@ const LineChart = () => {
         label: "Live Update",
         data: Array.from({ length: 200 }, () => Math.random() * 70),
         borderColor: "rgba(75, 192, 192, 1)",
-        backgroundColor: "rgba(75, 192, 192, 0.2)", 
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
         tension: 0.4,
-        fill: true, 
+        fill: true,
       },
     ],
   });
@@ -105,4 +105,3 @@ const LineChart = () => {
 };
 
 export default LineChart;
-

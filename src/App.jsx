@@ -18,18 +18,61 @@ const App = () => {
             <div className="header-exp">EXPENSES</div>
             <div className="header-exp47">$47,000</div>
           </div>
+          <div>
+            {/* Add a small bar chart here */}
+            <svg width="100" height="40">
+              <rect x="5" y="22" width="3" height="15" fill="#8e44ad" />
+              <rect x="12" y="17" width="3" height="20" fill="#8e44ad" />
+              <rect x="19" y="20" width="3" height="17" fill="#8e44ad" />
+              <rect x="26" y="24" width="3" height="13" fill="#8e44ad" />
+              <rect x="33" y="18" width="3" height="19" fill="#8e44ad" />
+              <rect x="40" y="7" width="3" height="30" fill="#8e44ad" />
+              <rect x="47" y="16" width="3" height="21" fill="#8e44ad" />
+              <rect x="54" y="16" width="3" height="21" fill="#8e44ad" />
+              <rect x="61" y="16" width="3" height="21" fill="#8e44ad" />
+              <rect x="68" y="27" width="3" height="10" fill="#8e44ad" />
+            </svg>
+          </div>
           <div className="header-exp-bw-ln" />
           <div className="exp-flex">
             <div className="header-exp">MY PROFITS</div>
             <div className="header-exp38">$38,500</div>
           </div>
+          <div style={{ gap: "5px" }}>
+            {/* Add a small bar chart here */}
+            <svg width="100" height="40">
+              <rect x="5" y="22" width="3 " height="15" fill="#fd60aa" />
+              <rect x="12" y="17" width="3" height="20" fill="#fd60aa" />
+              <rect x="19" y="20" width="3" height="17" fill="#fd60aa" />
+              <rect x="26" y="24" width="3" height="13" fill="#fd60aa" />
+              <rect x="33" y="18" width="3" height="19" fill="#fd60aa" />
+              <rect x="40" y="7" width="3" height="30" fill="#fd60aa" />
+              <rect x="47" y="16" width="3" height="21" fill="#fd60aa" />
+              <rect x="54" y="16" width="3" height="21" fill="#fd60aa" />
+              <rect x="61" y="16" width="3" height="21" fill="#fd60aa" />
+              <rect x="68" y="27" width="3" height="10" fill="#fd60aa" />
+            </svg>
+          </div>
         </div>
       </div>
       {/* ------  */}
       <div className="chart-container-section">
-        <header>
+        {/* <header>
           <h2>Live Feeds</h2>
-        </header>
+        </header> */}
+        <div className="header-content-space">
+          <div className="heder-analytics">
+            <h3>Live Feeds</h3>
+          </div>
+          <div className="header-text-gap">
+            <div className="header-text">
+              <div >Live Status</div>
+            </div>
+            <div className="header-text">
+              <div >Revenue</div>
+            </div>
+          </div>
+        </div>
 
         <div className="chart-section">
           <LineChart />

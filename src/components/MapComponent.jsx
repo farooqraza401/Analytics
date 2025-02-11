@@ -52,7 +52,7 @@ const MapComponent = () => {
   return (
     <div className="jvectormap-container chart-container-section">
       <div className="jvectormap">
-        <h2 className="map-title">Bird's Eyes</h2>
+        <h3 className="map-title">Bird's Eyes</h3>
         <div className="map-fix">
           <div className="map-boredr-btn1" />
           <div className="map-boredr-btn2" />
